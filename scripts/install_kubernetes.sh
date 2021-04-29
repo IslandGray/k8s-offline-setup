@@ -4,7 +4,7 @@
 yum remove -y kubelet kubeadm kubectl
 
 # 安装kubelet、kubeadm、kubectl
-yum install -y kubelet-1.17.1 kubeadm-1.17.1 kubectl-1.17.1
+yum install -y kubelet-1.21.0 kubeadm-1.21.0 kubectl-1.21.0
 
 # 修改docker Cgroup Driver为systemd
 # # 将/usr/lib/systemd/system/docker.service文件中的这一行 ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock

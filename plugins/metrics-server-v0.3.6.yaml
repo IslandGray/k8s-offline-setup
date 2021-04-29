@@ -119,7 +119,7 @@ spec:
         emptyDir: {}
       containers:
       - name: metrics-server
-        image: registry.cn-hangzhou.aliyuncs.com/google_containers/metrics-server-amd64:v0.3.6
+        image: 'registry.aliyuncs.com/google_containers/metrics-server-amd64:v0.3.6'
         # command:
         # - /metrics-server
         # - --kubelet-insecure-tls
@@ -128,7 +128,8 @@ spec:
           - --cert-dir=/tmp
           - --secure-port=4443
           - --kubelet-insecure-tls=true
-          - --kubelet-preferred-address-types=InternalIP
+          - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+          - --metric-resolution=30s
         ports:
         - name: main-port
           containerPort: 4443

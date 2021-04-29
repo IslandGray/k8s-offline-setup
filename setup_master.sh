@@ -4,7 +4,7 @@ set +e
 
 usage() {
     echo "使用说明："
-    echo "导入以下参数再执行setup_master"
+    echo "[样例]导入以下参数再执行setup_master"
     echo "export HOSTNAME=k8s-master"
     echo "export APISERVER_NAME=apiserver.k8s.com"
     echo "export MASTER_IP=192.168.1.30"

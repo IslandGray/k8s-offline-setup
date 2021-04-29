@@ -4,7 +4,7 @@ set +e
 
 usage() {
     echo "使用说明："
-    echo "导入以下参数再执行setup_worker"
+    echo "【样例】导入以下参数再执行setup_worker"
     echo "export HOSTNAME=k8s-worker1"
     echo "export APISERVER_NAME=apiserver.k8s.com"
     echo "export APISERVER_PORT=6443 默认:6443"
